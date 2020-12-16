@@ -10,6 +10,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Windows.Forms;
 using Notepad.Models;
 using SimpleNotepad.Models;
 
@@ -33,6 +34,20 @@ namespace Notepad
             {
                 cboStatus.Items.Add(s);
             }
+            refreshData();
+        }
+
+        private void refreshData()
+        {
+            BindingSource bi = new BindingSource();
+            var query = from t in npContext.Title
+                        orderby t.DueDate
+                        select new { t.Id, TitleName = t.Name, StatusName = t.Status.Name, t.DueDate };
+            bi.DataSource = query.ToList();
+
+            listView.ItemsSource = bi;
+
+
         }
 
         private void btnCreate_Click(object sender, RoutedEventArgs e)
@@ -49,11 +64,17 @@ namespace Notepad
                 npContext.Title.Add(newTitle);
 
                 npContext.SaveChanges();
+                refreshData();
             }
             else
             {
-                MessageBox.Show("Please make sure all data has been entered");
+                System.Windows.MessageBox.Show("Please make sure all data has been entered");
             }
+        }
+
+        private void btnDelete_Click(object sender, RoutedEventArgs e)
+        {
+            //var t = npContext.Title.Find(listView.SelectedItem);
         }
     }
 }
