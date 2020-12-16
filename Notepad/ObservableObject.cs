@@ -4,7 +4,7 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Text;
 
-namespace SimpleNotepad
+namespace Notepad
 {
     public class ObservableObject : INotifyPropertyChanged
     {

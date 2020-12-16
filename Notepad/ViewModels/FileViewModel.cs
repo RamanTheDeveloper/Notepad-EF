@@ -1,4 +1,5 @@
 ﻿using Microsoft.Win32;
+using Notepad.Models;
 using SimpleNotepad.Models;
 using System;
 using System.Collections.Generic;
@@ -6,7 +7,7 @@ using System.IO;
 using System.Text;
 using System.Windows.Input;
 
-namespace SimpleNotepad.ViewModels
+namespace Notepad.ViewModels
 {
     public class FileViewModel
     {

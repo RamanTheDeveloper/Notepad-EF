@@ -1,9 +1,10 @@
-﻿using SimpleNotepad.Models;
+﻿using Notepad.Models;
+using SimpleNotepad.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace SimpleNotepad.ViewModels
+namespace Notepad.ViewModels
 {
     public class MainViewModel
     {

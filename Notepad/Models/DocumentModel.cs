@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SimpleNotepad.Models
+namespace Notepad.Models
 {
     public class DocumentModel : ObservableObject
     {

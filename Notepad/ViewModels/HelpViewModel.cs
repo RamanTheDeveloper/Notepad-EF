@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Windows.Input;
 
-namespace SimpleNotepad.ViewModels
+namespace Notepad.ViewModels
 {
     //About tab --> who created this etc.
     public class HelpViewModel : ObservableObject

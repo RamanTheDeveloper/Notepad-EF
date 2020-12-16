@@ -4,7 +4,7 @@ using System.Text;
 using System.Windows;
 using System.Windows.Media;
 
-namespace SimpleNotepad.Models
+namespace Notepad.Models
 {
     public class FormatModel : ObservableObject
     {

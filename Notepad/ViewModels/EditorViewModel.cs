@@ -1,10 +1,12 @@
-﻿using SimpleNotepad.Models;
+﻿using Notepad.Models;
+using Notepad;
+using SimpleNotepad.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Input;
 
-namespace SimpleNotepad.ViewModels
+namespace Notepad.ViewModels
 {
     public class EditorViewModel
     {

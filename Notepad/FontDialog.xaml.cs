@@ -10,7 +10,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace SimpleNotepad
+namespace Notepad
 {
     /// <summary>
     /// Interaction logic for FontDialog.xaml

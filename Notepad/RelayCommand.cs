@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Windows.Input;
 
-namespace SimpleNotepad
+namespace Notepad
 {
     public class RelayCommand : ICommand
     {
