@@ -11,7 +11,7 @@
         <GroupBox Header="Manager" Margin="45,10,45,243">
             <TextBox x:Name="txtBox" Margin="133,0,0,0" TextWrapping="Wrap" Width="183" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left"/>
         </GroupBox>
-        <DatePicker HorizontalAlignment="Left" Margin="562,31,0,0" VerticalAlignment="Top" Width="165"/>
+        <DatePicker Name="datePicker" HorizontalAlignment="Left" Margin="562,31,0,0" VerticalAlignment="Top" Width="165"/>
         <ComboBox Name="cboStatus" HorizontalAlignment="Left" Margin="187,79,0,0" VerticalAlignment="Top" Width="97"/>
         <Button x:Name="btnCreate" Content="Create" HorizontalAlignment="Left" Margin="187,126,0,0" VerticalAlignment="Top" Width="49" Click="btnCreate_Click"/>
         <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" Margin="275,126,0,0" VerticalAlignment="Top" Width="49"/>

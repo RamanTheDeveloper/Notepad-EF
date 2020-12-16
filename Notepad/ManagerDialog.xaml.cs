@@ -37,7 +37,23 @@ namespace Notepad
 
         private void btnCreate_Click(object sender, RoutedEventArgs e)
         {
-            if()
+            if(cboStatus.SelectedItem != null && txtBox.Text != String.Empty)
+            {
+                var newTitle = new Models.Title
+                {
+                    Name = txtBox.Text,
+                    StatusId = (cboStatus.SelectedItem as Models.Status).Id,
+                    DueDate = datePicker.SelectedDate
+                };
+
+                npContext.Title.Add(newTitle);
+
+                npContext.SaveChanges();
+            }
+            else
+            {
+                MessageBox.Show("Please make sure all data has been entered");
+            }
         }
     }
 }
