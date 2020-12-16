@@ -79,8 +79,13 @@
     <Compile Include="Migrations\202012162032010_AddStatusSeedDataToDB.designer.cs">
       <DependentUpon>202012162032010_AddStatusSeedDataToDB.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202012162048183_AddTitleToDB.cs" />
+    <Compile Include="Migrations\202012162048183_AddTitleToDB.designer.cs">
+      <DependentUpon>202012162048183_AddTitleToDB.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Status.cs" />
+    <Compile Include="Models\Title.cs" />
     <Compile Include="ObservableObject.cs" />
     <Compile Include="RelayCommand.cs" />
     <Compile Include="ViewModels\EditorViewModel.cs" />
@@ -130,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202012162032010_AddStatusSeedDataToDB.resx">
       <DependentUpon>202012162032010_AddStatusSeedDataToDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012162048183_AddTitleToDB.resx">
+      <DependentUpon>202012162048183_AddTitleToDB.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -9,5 +9,6 @@ namespace SimpleNotepad.Models
     class npDBContext : DbContext
     {
         public DbSet<Status> Statuses { get; set; }
+        public DbSet<Title> Title { get; set; }
     }
 }
