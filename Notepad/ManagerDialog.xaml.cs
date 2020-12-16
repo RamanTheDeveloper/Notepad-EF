@@ -76,5 +76,10 @@ namespace Notepad
         {
             //var t = npContext.Title.Find(listView.SelectedItem);
         }
+
+        private void btnUpdate_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
     }
 }
