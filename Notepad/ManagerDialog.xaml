@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="ManagerDialog" Height="450" Width="800">
     <Grid>
-        <GroupBox Header="Manager" Margin="45,10,45,243">
+        <GroupBox Header="Manager" Margin="45,10,45,213">
             <TextBox x:Name="txtBox" Margin="133,0,0,0" TextWrapping="Wrap" Width="183" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left"/>
         </GroupBox>
         <DatePicker Name="datePicker" HorizontalAlignment="Left" Margin="562,31,0,0" VerticalAlignment="Top" Width="165"/>
@@ -15,7 +15,7 @@
         <Button x:Name="btnCreate" Content="Create" HorizontalAlignment="Left" Margin="187,126,0,0" VerticalAlignment="Top" Width="49" Click="btnCreate_Click"/>
         <Button x:Name="btnUpdate" Content="Update" HorizontalAlignment="Left" Margin="275,126,0,0" VerticalAlignment="Top" Width="49" Click="btnUpdate_Click"/>
         <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Center" Margin="362,126,381,0" VerticalAlignment="Top" Width="49" Click="btnDelete_Click"/>
-        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="562,126,0,0" VerticalAlignment="Top" Width="49"/>
+        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" Margin="275,168,0,0" VerticalAlignment="Top" Width="49"/>
         <Label Content="Title" HorizontalAlignment="Left" Margin="118,31,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.512,0.627"/>
         <Label Content="Status" HorizontalAlignment="Left" Margin="118,75,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.512,0.627"/>
         <ListView Name="listView" HorizontalAlignment="Left" Height="179" Margin="45,230,0,0" VerticalAlignment="Top" Width="702">
@@ -25,8 +25,11 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <TextBox x:Name="txtBox_Copy" Margin="562,75,0,0" TextWrapping="Wrap" Width="165" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left"/>
         <Label Content="Category" HorizontalAlignment="Left" Margin="488,75,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.512,0.627"/>
+        <Label Content="Title" HorizontalAlignment="Left" Margin="118,31,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.512,0.627"/>
+        <TextBox x:Name="txtBox_Copy2" Margin="562,126,0,0" TextWrapping="Wrap" Width="165" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <Label Content="Owner Name" HorizontalAlignment="Left" Margin="466,126,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.512,0.627"/>
+        <ComboBox HorizontalAlignment="Left" Margin="562,79,0,0" VerticalAlignment="Top" Width="165"/>
 
     </Grid>
 </Window>
