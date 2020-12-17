@@ -25,6 +25,8 @@
                 </GridView>
             </ListView.View>
         </ListView>
+        <TextBox x:Name="txtBox_Copy" Margin="562,75,0,0" TextWrapping="Wrap" Width="165" Height="25" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <Label Content="Category" HorizontalAlignment="Left" Margin="488,75,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.512,0.627"/>
 
     </Grid>
 </Window>
